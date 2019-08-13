@@ -6,17 +6,18 @@ print("********* \n"
       "********* \n")
 
 class Player:
-    GENDER_MALE = 1
-    GENDER_FEMALE = 2
-    
-player = Player()
-player.gender = random.randint(1,2)
 
-if player.gender == Player.GENDER_MALE:
-    print("You have been born a male.")
-else:
-    print("You have been born a female.")
+    def __init__(self,first,last,gender):
+        self.first = first
+        self.last = last
+        self.gender = gender
+first = input("Please enter first name: ")
+last = input("Please enter last name: ")
+gender = input("Please enter gender: ")
 
+
+player1 = Player(first,last,gender)
+print("You are named " + first + " " + last + ".") 
 
 
 
