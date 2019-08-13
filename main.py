@@ -25,7 +25,9 @@ while gender != "1" and gender != "2":
 player1 = Player(first,last,gender)
 print("You are named " + first + " " + last + ".")
 
-def __init__(self,year):
+class Life(object):
+
+    def __init__(self,year):
         self.year = year
 input("*Press Enter to age a year*")
 print(" ")
@@ -36,3 +38,5 @@ with open("Passive_Events.txt") as file:
                 passive = random.choice(file.readlines())
 print(passive)
 
+#make age system
+#make random events + enter reccuring 
